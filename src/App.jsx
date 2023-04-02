@@ -1,8 +1,11 @@
 import { Link, Outlet } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/layouts/Navbar";
+import { useState } from "react";
 
 function App() {
+  const [isgo, setIsGo] = useState(false);
+  console.log("Kopa");
   return (
     <div className="app">
       <Navbar />

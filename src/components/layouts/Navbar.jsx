@@ -23,7 +23,7 @@ const Navbar = () => {
           About
         </NavLink>
         <NavLink
-          to="/contact"
+          to="/contact-us"
           style={{
             margin: "0px 20px 0px 20px",
             color: "white",

@@ -4,10 +4,22 @@ import App from "./App";
 import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import About from "./components/pages/About";
+import ContactUs from "./components/pages/ContactUs";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    children: [
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUs />,
+      },
+    ],
   },
 ]);
 

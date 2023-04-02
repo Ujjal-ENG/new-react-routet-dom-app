@@ -32,6 +32,16 @@ const Navbar = () => {
         >
           Contact Us
         </NavLink>
+        <NavLink
+          to="/users"
+          style={{
+            margin: "0px 20px 0px 20px",
+            color: "white",
+            fontWeight: "bold",
+          }}
+        >
+          Users
+        </NavLink>
       </ul>
     </>
   );

@@ -3,9 +3,7 @@ import "./App.css";
 import Navbar from "./components/layouts/Navbar";
 import { useState } from "react";
 
-function App() {
-  const [isgo, setIsGo] = useState(false);
-  console.log("Kopa");
+function App(props) {
   return (
     <div className="app">
       <Navbar />

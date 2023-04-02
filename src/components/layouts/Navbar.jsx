@@ -13,6 +13,11 @@ const Navbar = () => {
         }}
       >
         <NavLink
+          className={({ isActive, isPending }) =>
+            isActive ? "active" : isPending ? console.log("pending") : ""
+          }
+        ></NavLink>
+        <NavLink
           to="/about"
           style={{
             margin: "0px 20px 0px 20px",

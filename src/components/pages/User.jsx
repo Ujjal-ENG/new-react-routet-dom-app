@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const User = (props) => {
-  const { name, email, address, company } = props.data;
+  const { name, email, id } = props.data;
 
   return (
-    <div
+    <Link
       style={{
         border: "2px solid red",
         padding: "5px",
@@ -14,33 +15,11 @@ const User = (props) => {
         margin: "10px",
         color: "white",
       }}
+      to={`/user-details/${id}`}
     >
       <h1>{name}</h1>
       <h4>{email}</h4>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "between",
-          alignItems: "center",
-          gap: "20px",
-        }}
-      >
-        <ul style={{ color: "white" }}>
-          {Object.values(address).map((el, idx) => {
-            if (typeof el !== "object") {
-              return <li key={idx}>{el}</li>;
-            }
-          })}
-        </ul>
-        <ol style={{ color: "white" }}>
-          {Object.values(company).map((el, idx) => {
-            if (typeof el !== "object") {
-              return <li key={idx}>{el}</li>;
-            }
-          })}
-        </ol>
-      </div>
-    </div>
+    </Link>
   );
 };
 

@@ -9,7 +9,7 @@ function App() {
     <div className="app">
       <Navbar />
       <h1>Hello World</h1>
-      <Routes />
+
       <Outlet />
       <Link
         to="/"

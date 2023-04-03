@@ -2,12 +2,14 @@ import { Link, Outlet } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/layouts/Navbar";
 import { useState } from "react";
+import Routes from "./components/pages/Routes";
 
-function App(props) {
+function App() {
   return (
     <div className="app">
       <Navbar />
       <h1>Hello World</h1>
+      <Routes />
       <Outlet />
       <Link
         to="/"
